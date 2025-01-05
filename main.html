@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces Heatmap</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .day {
+        stroke: #ccc;
+        }
+        .month {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <input type="text" id="handle" placeholder="Enter your handle">
+    <button onclick="fetchData()">Enter</button>
+    <br><br>
+    <svg id="heatmap" width="960" height="200"></svg>
+</body>
+</html>
