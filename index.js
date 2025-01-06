@@ -159,3 +159,9 @@ async function fetchData() {
 }
 
 
+document.getElementById("handle").addEventListener("keypress", async function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        await fetchData();
+    }
+  }); 
